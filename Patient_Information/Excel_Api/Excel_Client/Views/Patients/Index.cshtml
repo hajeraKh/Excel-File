@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Excel_Api.Models.Patient>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="display-2">Patient Information List</h1>
+<div class="row">
+    <div class="col">
+        <div class="d-flex justify-content-end">
+            <!-- Add New Patient button -->
+            <a asp-action="Create" asp-controller="Patients" class="btn btn-outline-primary btn-sm mb-2"><i class="fa fa-plus"></i> Add New Patient</a>
+        </div>
+ <table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Epilepsy</th>
+            <th>Disease</th>
+            <th>NCD Details</th>
+            <th>Allergy Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var patient in Model)
+        {
+            <tr>
+                <td>@patient.PatientID</td>
+                <td>@patient.PatientName</td>
+                <td>@patient.Epilepsy</td>
+                <td>@(patient.Disease?.DiseaseName ?? "No Disease")</td>
+                <td>
+                    @if (patient.NCDDetails != null && patient.NCDDetails.Any())
+                    {
+                        <div>
+                            @foreach (var ncdDetail in patient.NCDDetails)
+                            {
+                                <div>
+                                    <span>NCD ID: @ncdDetail.NCDID</span>
+                                    <span>NCD Name: @ncdDetail.NCD?.NCDName</span>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        @: N/A
+                    }
+                </td>
+                <td>
+                    @if (patient.AllergiesDetails != null && patient.AllergiesDetails.Any())
+                    {
+                        <div>
+                            @foreach (var allergyDetail in patient.AllergiesDetails)
+                            {
+                                <div>
+                                    <span>Allergy ID: @allergyDetail.AllergyID</span>
+                                    <span>Allergy Name: @allergyDetail.Allergy?.AllergyName</span>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        @: N/A
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table> 
+</div>
+</div>
+

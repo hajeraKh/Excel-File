@@ -1,0 +1,8 @@
+F:\jony\Excel Technologies Ltd\Task_Excel\Iteration\Task_2_Iteration\Task_2_Iteration\bin\Debug\Task_2_Iteration.exe.config
+F:\jony\Excel Technologies Ltd\Task_Excel\Iteration\Task_2_Iteration\Task_2_Iteration\bin\Debug\Task_2_Iteration.exe
+F:\jony\Excel Technologies Ltd\Task_Excel\Iteration\Task_2_Iteration\Task_2_Iteration\bin\Debug\Task_2_Iteration.pdb
+F:\jony\Excel Technologies Ltd\Task_Excel\Iteration\Task_2_Iteration\Task_2_Iteration\obj\Debug\Task_2_Iteration.csproj.AssemblyReference.cache
+F:\jony\Excel Technologies Ltd\Task_Excel\Iteration\Task_2_Iteration\Task_2_Iteration\obj\Debug\Task_2_Iteration.csproj.SuggestedBindingRedirects.cache
+F:\jony\Excel Technologies Ltd\Task_Excel\Iteration\Task_2_Iteration\Task_2_Iteration\obj\Debug\Task_2_Iteration.csproj.CoreCompileInputs.cache
+F:\jony\Excel Technologies Ltd\Task_Excel\Iteration\Task_2_Iteration\Task_2_Iteration\obj\Debug\Task_2_Iteration.exe
+F:\jony\Excel Technologies Ltd\Task_Excel\Iteration\Task_2_Iteration\Task_2_Iteration\obj\Debug\Task_2_Iteration.pdb

@@ -1,0 +1,16 @@
+F:\jony\Excel Technologies Ltd\Task_Excel\Task_6\Task_6\Task_6\bin\Debug\Task_6.exe.config
+F:\jony\Excel Technologies Ltd\Task_Excel\Task_6\Task_6\Task_6\bin\Debug\Task_6.exe
+F:\jony\Excel Technologies Ltd\Task_Excel\Task_6\Task_6\Task_6\bin\Debug\Task_6.pdb
+F:\jony\Excel Technologies Ltd\Task_Excel\Task_6\Task_6\Task_6\obj\Debug\Task_6.csproj.AssemblyReference.cache
+F:\jony\Excel Technologies Ltd\Task_Excel\Task_6\Task_6\Task_6\obj\Debug\Task_6.csproj.SuggestedBindingRedirects.cache
+F:\jony\Excel Technologies Ltd\Task_Excel\Task_6\Task_6\Task_6\obj\Debug\Task_6.csproj.CoreCompileInputs.cache
+F:\jony\Excel Technologies Ltd\Task_Excel\Task_6\Task_6\Task_6\obj\Debug\Task_6.exe
+F:\jony\Excel Technologies Ltd\Task_Excel\Task_6\Task_6\Task_6\obj\Debug\Task_6.pdb
+F:\jony\Excel Technologies Ltd\Competency Assessment\Task_6\Task_6\bin\Debug\Task_6.exe.config
+F:\jony\Excel Technologies Ltd\Competency Assessment\Task_6\Task_6\bin\Debug\Task_6.exe
+F:\jony\Excel Technologies Ltd\Competency Assessment\Task_6\Task_6\bin\Debug\Task_6.pdb
+F:\jony\Excel Technologies Ltd\Competency Assessment\Task_6\Task_6\obj\Debug\Task_6.csproj.AssemblyReference.cache
+F:\jony\Excel Technologies Ltd\Competency Assessment\Task_6\Task_6\obj\Debug\Task_6.csproj.SuggestedBindingRedirects.cache
+F:\jony\Excel Technologies Ltd\Competency Assessment\Task_6\Task_6\obj\Debug\Task_6.csproj.CoreCompileInputs.cache
+F:\jony\Excel Technologies Ltd\Competency Assessment\Task_6\Task_6\obj\Debug\Task_6.exe
+F:\jony\Excel Technologies Ltd\Competency Assessment\Task_6\Task_6\obj\Debug\Task_6.pdb

@@ -1,0 +1,119 @@
+﻿@model Excel_Api.Models.ViewModels.InsertModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<h1 class="display-4 text-center"> Patient Information</h1>
+
+<form asp-action="Create">
+    <div class="form-group row mb-2">
+        <label asp-for="PatientName" class="col-sm-2 col-form-label">Patient Name</label>
+        <div class="col-sm-10">
+            <input asp-for="PatientName" class="form-control" />
+            <span asp-validation-for="PatientName" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group row mb-2">
+        <label asp-for="DiseaseID" class="col-sm-2 col-form-label">Disease</label>
+        <div class="col-sm-10">
+            <select asp-for="DiseaseID" class="form-select">
+                @if (ViewBag.Diseases != null)
+                {
+                    @foreach (var disease in ViewBag.Diseases)
+                    {
+                        <!-- Your rendering logic for each disease -->
+                    }
+                }
+                else
+                {
+                    <p>No diseases available.</p>
+                }
+            </select>
+            <span asp-validation-for="DiseaseID" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row mb-2">
+        <label asp-for="Epilepsy" class="col-sm-2 col-form-label">Epilepsy</label>
+        <div class="col-sm-10">
+            <select asp-for="Epilepsy" class="form-control">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <span asp-validation-for="Epilepsy" class="text-danger"></span>
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        <div class="row mb-2">
+            <label asp-for="NCD_Ids" class="col-sm-2 col-form-label">NCD Names</label>
+            <div class="col-sm-4">
+                <select id="leftNCDs" asp-items="ViewBag.NCDs" class="form-control" multiple></select>
+                <span asp-validation-for="NCD_Ids" class="text-danger"></span>
+            </div>
+            <div class="col-sm-2 d-flex flex-column justify-content-center align-items-center">
+                <button type="button" id="btnAddNCD" class="btn btn-primary mb-2">ADD&gt;</button>
+                <button type="button" id="btnRemoveNCD" class="btn btn-danger">Remove&lt;</button>
+            </div>
+            <div class="col-sm-4">
+                <select id="rightNCDs" class="form-control" multiple></select>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="row mb-2">
+            <label asp-for="SelectedAllergies" class="col-sm-2 col-form-label">Allergy Names</label>
+            <div class="col-sm-4">
+                <select id="leftAllergies" asp-items="ViewBag.Allergies" class="form-control" multiple></select>
+                <span asp-validation-for="Allergy_Ids" class="text-danger"></span>
+            </div>
+            <div class="col-sm-2 d-flex flex-column justify-content-center align-items-center">
+                <button type="button" id="btnAddAllergy" class="btn btn-primary mb-2">ADD&gt;</button>
+                <button type="button" id="btnRemoveAllergy" class="btn btn-danger">Remove&lt;</button>
+            </div>
+            <div class="col-sm-4">
+                <select id="rightAllergies" class="form-control" multiple></select>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-group d-flex justify-content-center align-items-center mt-3">
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        $(document).ready(function () {
+            // NCDs add/remove logic
+            $('#btnAddNCD').on('click', function () {
+                $('#leftNCDs option:selected').appendTo('#rightNCDs');
+            });
+
+            $('#btnRemoveNCD').on('click', function () {
+                $('#rightNCDs option:selected').appendTo('#leftNCDs');
+            });
+
+            // Allergies add/remove logic
+            $('#btnAddAllergy').on('click', function () {
+                $('#leftAllergies option:selected').appendTo('#rightAllergies');
+            });
+
+            $('#btnRemoveAllergy').on('click', function () {
+                $('#rightAllergies option:selected').appendTo('#leftAllergies');
+            });
+        });
+    </script>
+}
+
+
+
